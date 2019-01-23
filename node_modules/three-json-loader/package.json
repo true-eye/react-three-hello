@@ -1,0 +1,28 @@
+{
+  "name": "three-json-loader",
+  "version": "1.0.0",
+  "description": "A custom JSON loader for Three.JS.",
+  "main": "index.js",
+  "dependencies": {
+    "three": "^0.71.0",
+    "three-orbit-controls": "^69.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdroadie/three-js-loader.git"
+  },
+  "keywords": [
+    "three",
+    "json"
+  ],
+  "author": "sdroadie <jneal1992@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sdroadie/three-js-loader/issues"
+  },
+  "homepage": "https://github.com/sdroadie/three-js-loader#readme"
+}

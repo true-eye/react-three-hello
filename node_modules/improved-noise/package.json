@@ -1,0 +1,15 @@
+{
+  "name": "improved-noise",
+  "version": "0.0.3",
+  "repository": "",
+  "description": "Noise function module for ThreeJS",
+  "keywords": [
+    "noise",
+    "threejs",
+    "perlin"
+  ],
+  "files": [
+    "index.js"
+  ],
+  "license": "MIT"
+}
