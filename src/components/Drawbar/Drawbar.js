@@ -26,12 +26,15 @@ class Drawbar extends Component {
     render() {
         const active_path = window.location.hash;
         console.log(active_path);
+        var CustomItem = (props) => ({
+            render() {
+                return <ListGroup.Item style={{color: '#ffffff', backgroundColor: '#343a40'}} action onClick={props.onClick} value={props.value} variant={props.variant}>{props.children}</ListGroup.Item>
+            }
+        });
         return (
             <ListGroup defaultActiveKey={active_path}>           
                 
-                <ListGroup.Item action onClick={this.clicklisthandle} variant='success' value={'Simple'}>
-                    +Simple Exmaples
-                </ListGroup.Item>
+                <CustomItem action onClick={this.clicklisthandle} variant='success' value={'Simple'}>+Simple Exmaples</CustomItem>
                 
                 <Collapse in={this.state.toggled_key === 'Simple'}>
                     <div>
@@ -47,9 +50,9 @@ class Drawbar extends Component {
                 </Collapse>
 
 
-                <ListGroup.Item action onClick={this.clicklisthandle} variant='success' value={'Loader'}>
+                <CustomItem action onClick={this.clicklisthandle} variant='success' value={'Loader'}>
                     +Loader Exmaples
-                </ListGroup.Item>
+                </CustomItem>
                 
                 <Collapse in={this.state.toggled_key === 'Loader'}>
                     <div>
@@ -70,9 +73,9 @@ class Drawbar extends Component {
                     </div>
                 </Collapse>
 
-                <ListGroup.Item action onClick={this.clicklisthandle} variant='success' value={'Control'}>
+                <CustomItem action onClick={this.clicklisthandle} variant='success' value={'Control'}>
                     +Control Exmaples
-                </ListGroup.Item>
+                </CustomItem>
                 
                 <Collapse in={this.state.toggled_key === 'Control'}>
                     <div>

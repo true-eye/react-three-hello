@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^4.2.1",
+    "create-react-class": "^15.6.3",
     "improved-noise": "^0.0.3",
     "postprocessing": "^5.5.0",
     "react": "^16.7.0",
